@@ -1,6 +1,9 @@
 name: Listener
 
-on: push
+on:
+  push:
+  repository_dispatch:
+    types: [ci-update]
 
 jobs:
   hello:
